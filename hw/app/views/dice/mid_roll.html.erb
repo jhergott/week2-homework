@@ -1,0 +1,16 @@
+<h1>Dice Game</h1>
+
+<img src="http://jeffcohenonline.com/dice/<%= @die_mid_1 %>.png">
+<img src="http://jeffcohenonline.com/dice/<%= @die_mid_2 %>.png">
+
+<h4><%= @mid_roll_outcome %></h4>
+
+<% if @game_over %>
+
+<a href="/dice">Play Again</a>
+
+<% else %>
+
+<a href="/dice/rolling?point=<%= @point_mid %>">Roll</a>
+
+<% end %>
